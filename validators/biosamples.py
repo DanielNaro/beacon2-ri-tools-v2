@@ -101,7 +101,6 @@ class InterventionsOrProcedures(BaseModel, extra='forbid'):
                 raise ValueError('ageAtProcedure, if object, must be any format possible between age, ageRange, gestationalAge, timeInterval or OntologyTerm')
             
 class Measurement(BaseModel, extra='forbid'):
-    assayCode: OntologyTerm
     date: Optional[str] = None
     measurementValue: Union[Quantity, OntologyTerm, list]
     notes: Optional[str]=None

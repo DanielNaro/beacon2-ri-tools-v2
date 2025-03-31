@@ -704,6 +704,10 @@ def generate(dict_properties):
                         elif zygo[0] == 0 and zygo[1]== 1:
                             dict_trues[str(j)]="01"
                             j+=1
+                        else:
+                            #including info from other biosamples
+                            j+=1
+
 
             k=0
 
